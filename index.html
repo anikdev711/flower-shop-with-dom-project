@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop with DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1 class="text-5xl text-center mt-4 mb-4">All Flower Cards</h1>
+        <!-- main container starts here  -->
+        <div class="flex flex-col lg:flex-row">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <!-- snow white section starts here  -->
+                <div>
+                    <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/Rectangle4.png" alt="rectangle-4" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Snow white</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                            <p>Price: <span id="snow-white-price">50</span> $</p>
+                            <div class="card-actions">
+                                <button onclick="handleCLikBtn(this)" id="btn-snow-white" class="btn btn-secondary">ADD
+                                    TO
+                                    CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- snow white section ends here  -->
+                <!-- black white section starts  -->
+                <div>
+                    <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/pngwing10.png" alt="pngwing-10" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Black white</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                            <p>Price: <span id="black-white-price">10</span>$</p>
+                            <div class="card-actions">
+                                <button onclick="handleCLikBtn(this)" id="btn-black-white" class="btn btn-secondary">ADD
+                                    TO
+                                    CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- black white section ends  -->
+                <!-- blue rose section starts  -->
+                <div>
+                    <div class="card w-80 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/pngwing7.png" alt="pngwing7" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Blue Rose</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                            <p>Price: <span id="blue-rose-price">100</span>$</p>
+                            <div class="card-actions">
+                                <button onclick="handleCLikBtn(this)" id="btn-blue-rose" class="btn btn-secondary">ADD
+                                    TO
+                                    CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- blue rose section ends  -->
+            </div>
+
+            <!-- <div id="selected-items" class="selected-items"></div> -->
+
+            <!-- code-hero section  -->
+            <div id="code-hero-container" class="ml-4">
+                <h1 class="text-center">Code: Hero</h1>
+                <div class="selected-items" id="selected-items">
+                    
+                </div>
+                <p class="text-center mb-4">Total: <span id="code-hero-total">00</span>$</p>
+                <input type="text" name="" id="code-hero-input" class="border border-black w-3/5">
+                <button id="code-hero-discount"
+                    class="btn btn-success px-2 py-1 mb-4">Discount</button>
+                <hr>
+                <p class="text-center">Grand Total: <span id="code-hero-grand">00</span>$</p>
+            </div>
+        </div>
+
+        <!-- main container ends here  -->
+    </main>
+
+    <!-- script starts  -->
+
+    <!-- <script src="scripts/discount.js"></script> -->
+    <script src="scripts/totalDiscount.js"></script>
+
+    <!-- script ends -->
+</body>
+
+</html>
